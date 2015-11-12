@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Test.JsonProvider")]
+[assembly: AssemblyTitle("TempIdeas")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Test.JsonProvider")]
+[assembly: AssemblyProduct("TempIdeas")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("36af2fe4-01b6-4970-a839-c96df43c5a97")]
+[assembly: Guid("babef1cf-8a08-4365-967a-c4607374b1b6")]
 
 // Version information for an assembly consists of the following four values:
 //

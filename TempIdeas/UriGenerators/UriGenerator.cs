@@ -1,14 +1,11 @@
 ﻿using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
+using System.Web;
 using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TempIdeas.ConfigMappers.Models;
 
-namespace Test.JsonProvider
+namespace TempIdeas.UriGenerators
 {
-    public class UriGenerator
+    public class UriGenerator: IUriGenerator
     {
         public Uri Uri { get; private set; }
 
@@ -26,7 +23,7 @@ namespace Test.JsonProvider
 
         private string GenerateQueryString(QueryParamCollection queryParams)
         {
-            NameValueCollection queryBlank = System.Web.HttpUtility.ParseQueryString(string.Empty);
+            NameValueCollection queryBlank = HttpUtility.ParseQueryString(string.Empty);
 
             foreach (QueryParamElement qp in queryParams)
             {
