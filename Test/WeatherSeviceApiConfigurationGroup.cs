@@ -13,7 +13,7 @@ namespace Test
         [ConfigurationProperty("uriConfig")]
         public UriConfigSection UriConfig
         {
-            get { return (UriConfigSection)base.Sections[ "uriConfig" ]; }
+            get { return (UriConfigSection)base.Sections["uriConfig"]; }
         }
     }
 }

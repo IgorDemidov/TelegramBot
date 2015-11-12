@@ -13,8 +13,13 @@ namespace Test
         {
 
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            WeatherSeviceApiConfigurationGroup myConfiguration = (WeatherSeviceApiConfigurationGroup)config.GetSectionGroup("my.configuration");
+            WeatherSeviceApiConfigurationGroup myConfiguration = (WeatherSeviceApiConfigurationGroup)config.GetSectionGroup("weatherServiceApiConfig");
             UriConfigSection section = myConfiguration.UriConfig;
+
+            foreach (QueryParamElement p  in section.QueryParams)
+            {
+                Console.WriteLine("{0} - {1} - {2}", p.Name,p.Value, p.ParamName);
+            }
             Console.ReadLine();
         }
     }

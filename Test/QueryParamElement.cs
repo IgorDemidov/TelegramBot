@@ -24,9 +24,9 @@ namespace Test
         }
 
         [ConfigurationProperty("value")]
-        public int Value
+        public string Value
         {
-            get { return (int)base["value"]; }
+            get { return (string)base["value"]; }
             set { base["value"] = value; }
         }
     }
