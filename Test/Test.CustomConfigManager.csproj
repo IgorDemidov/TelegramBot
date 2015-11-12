@@ -44,10 +44,11 @@
   <ItemGroup>
     <Compile Include="QueryParamCollection.cs" />
     <Compile Include="QueryParamElement.cs" />
-    <Compile Include="UriConfigSection.cs" />
+    <Compile Include="UriConfig.cs" />
     <Compile Include="ValueElement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UriConfigManager.cs" />
     <Compile Include="WeatherSeviceApiConfigurationGroup.cs" />
   </ItemGroup>
   <ItemGroup>

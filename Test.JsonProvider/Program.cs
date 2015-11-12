@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test
+namespace Test.JsonProvider
 {
     class Program
     {
@@ -14,11 +13,8 @@ namespace Test
 
             UriConfigManager configManager = new UriConfigManager("weatherServiceApiConfig");
 
-            foreach (QueryParamElement p in configManager.UriConfig.QueryParams)
-            {
-                string queryStringPartial = p.ParamName = p.Value;
-                Console.WriteLine("{0}:\t{1}", p.Name, queryStringPartial);
-            }
+            UriGenerator uriGen = new UriGenerator(configManager.UriConfig);
+            Console.WriteLine(uriGen.Uri.ToString());
             Console.ReadLine();
         }
     }
